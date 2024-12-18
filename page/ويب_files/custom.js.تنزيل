@@ -1,0 +1,45 @@
+$('.homepage-slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  arrows: true,
+  rtl:true
+});
+$('.academy-slider-js').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  arrows: true,
+  rtl:true
+});
+
+
+
+$('#champ-items-slider-1 , #champ-items-slider-2 , #champ-items-slider-3 , #champ-items-slider-4 , #champ-items-slider-5 , #champ-items-slider-6 , #champ-items-slider-7 , #champ-items-slider-8 , #champ-items-slider-9 , #champ-items-slider-10 , #champ-items-slider-11').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  cssEase: 'linear',
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  rtl:true
+});
+
+$("#menuToggle").click(function() {
+  $("body").toggleClass("menu-opened");
+});
+
+
+
+
+$('.modal').on('shown.bs.modal', function (e) {
+  $('.mobile-menu').toggleClass('position-static position-absolute');
+})
+$('.modal').on('hidden.bs.modal', function () {
+  $('.mobile-menu').toggleClass('position-static position-absolute');
+});

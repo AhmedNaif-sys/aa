@@ -1,0 +1,59 @@
+$("#menu-toggle-btn").click(function(){
+    $('.expanded-menu-cont').toggleClass('opened');
+    $('.v5-main-header').toggleClass('opened');
+    $('body').toggleClass('menu-opened');
+  });
+  $('.academy-programs-slider-js').slick({
+    rtl: true,
+    slidesToShow: 3,
+    arrows: true,
+    prevArrow: $('#news-slider-prev'),
+    nextArrow: $('#news-slider-next'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+$('.academy-branches-cont-slider-js').slick({
+  centerMode: true,
+  rtl: true,
+  centerPadding: '60px',
+  slidesToShow: 4,
+  arrows: true,
+  prevArrow: $('#academy-slider-prev'),
+  nextArrow: $('#academy-slider-next'),
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+				
